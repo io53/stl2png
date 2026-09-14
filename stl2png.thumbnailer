@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=stl2png
+Exec=stl2png -s %s %i %o
+MimeType=model/stl;model/x.stl-ascii;model/x.stl-binary;application/sla;

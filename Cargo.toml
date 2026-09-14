@@ -1,0 +1,19 @@
+[package]
+name = "stl2png"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.78"
+description = "Tiny CPU-only STL thumbnailer: renders STL files to PNG with no GPU or display server"
+license = "MIT"
+repository = "https://github.com/io53/stl2png"
+keywords = ["stl", "thumbnail", "thumbnailer", "3d", "png"]
+categories = ["command-line-utilities", "rendering"]
+
+[dependencies]
+png = "0.17"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
